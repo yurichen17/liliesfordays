@@ -71,15 +71,37 @@ header{
     margin-top:-100px;
     margin-left:-300px;
 }
-.rectangle span,
-.rectangle span::before{
-    position: relative;
+.rectangle1{
+    width:200px;
+    height:7px;
+    background:rgb(255, 255, 255);
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    margin-top:100px;
+    margin-left:150px;
 }
 
-.rectangle span::before{
-    content:'';
-    position: absolute;
-    bottom: 7px;
+.smallrect{
+    width:100px;
+    height:7px;
+    background:rgb(255, 255, 255);
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    margin-top:-120px;
+    margin-left:-300px;
+}
+
+.smallrect1{
+    width:100px;
+    height:7px;
+    background:rgb(255, 255, 255);
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    margin-top:120px;
+    margin-left:250px;
 }
 
 .logo {
