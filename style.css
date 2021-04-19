@@ -10,14 +10,18 @@
 
 body{
     margin:0;
+    
     background:#222;
+    
     font-family:'Courier New', Courier, monospace;
     font-weight:400;
     background-image: url("assets/me.png");
-    
+    background-attachment: fixed;
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 100vh;
+    height: 100%;
+    /*overflow: hidden;*/
     position:relative;
     margin: 0;
 }
