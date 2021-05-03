@@ -8,7 +8,7 @@
     box-sizing:border-box;
 }
 
-body{
+body.home{
     margin:0;
     
     background:#222;
@@ -16,6 +16,23 @@ body{
     font-family:'Courier New', Courier, monospace;
     font-weight:400;
     background-image: url("assets/me.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    /*overflow: hidden;*/
+    position:relative;
+    margin: 0;
+}
+
+body.about{
+    margin:0;
+    
+    background:rgb(54, 54, 54);
+    
+    font-family:'Courier New', Courier, monospace;
+    font-weight:400;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -51,6 +68,72 @@ div.a{
     place-items:center;
 }
 
+.container{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+
+.text{
+    color:white;
+    margin-top: 50px;
+    padding-left:20px;
+    margin-right: 50px;
+    max-width: 80%;
+    line-height: 23px;
+}
+
+.about-text{
+    color:white;
+    margin-top: 200px;
+    padding-left:20px;
+    margin-right: 50px;
+    max-width: 50%;
+    line-height: 23px;
+}
+.middle{
+    display:flex;
+    align-items:center;
+    margin-left: 10px;
+}
+
+.about-pic{
+    border-radius: 50%;
+    margin: 10px;
+    margin-left: 50px;
+    margin-top: 200px;
+    width: 300px;
+    height: auto;
+}
+.contact-pic{
+    
+    margin: 10px;
+    margin-left: 50px;
+    margin-top: 200px;
+    width: 300px;
+    height: auto;
+}
+.tiny-pic{
+    width: 50px;
+    margin-right: 10px;
+}
+
+
+@media screen and (max-width:800px){
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-text {
+        margin-top: 50px;
+        max-width: 80%;
+    }
+}
+
+.link{
+    color:white;
+}
 /*nav styles*/
 
 header{
@@ -64,7 +147,7 @@ header{
 .rectangle{
     width:200px;
     height:7px;
-    background:rgb(255, 255, 255);
+    background:rgb(54, 54, 54);
     position:fixed;
     top: 50%;
     left: 50%;
@@ -74,7 +157,7 @@ header{
 .rectangle1{
     width:200px;
     height:7px;
-    background:rgb(255, 255, 255);
+    background:rgb(54, 54, 54);
     position:fixed;
     top: 50%;
     left: 50%;
@@ -85,7 +168,7 @@ header{
 .smallrect{
     width:100px;
     height:7px;
-    background:rgb(255, 255, 255);
+    background:rgb(54, 54, 54);
     position:fixed;
     top: 50%;
     left: 50%;
@@ -96,7 +179,7 @@ header{
 .smallrect1{
     width:100px;
     height:7px;
-    background:rgb(255, 255, 255);
+    background:rgb(54, 54, 54);
     position:fixed;
     top: 50%;
     left: 50%;
@@ -187,7 +270,7 @@ nav a{
 }
 
 nav a:hover{
-    color:#000;
+    color:rgb(54, 54, 54);
 }
 
 /*sibling of nav, looks for any preceeding sibling*/
@@ -239,7 +322,7 @@ nav a:hover{
         content:'';
         display: block;
         height: 5px;
-        background: black;
+        background: rgb(54, 54, 54);;
         position: absolute;
         top: -.75em;
         left:0;
