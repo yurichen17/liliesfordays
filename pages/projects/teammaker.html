@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<link rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=Kodchasan">
+<html>
+   <head>
+     <meta charset="UTF-8">
+     <meta name="description" content="This is a cool website">
+     <title>Yuri's Website</title>
+     <link rel="icon" href="../../assets/Y.jpg">
+     <link rel="stylesheet" href="../../style.css">
+   </head>
+   <body class="about">
+      <header>
+        <a href = "../../index.html"><img width="80" src = "../../assets/lily.png" alt="logo" class="logo"></a>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <nav>
+          <ul>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../portfolio.html">Portfolio</a></li>
+            <li><a href="../../assets/Resume.pdf"target="_blank">Resume</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <!-- looking for id -->
+        <label for="nav-toggle" class="nav-toggle-label">
+          <span></span>
+        </label>
+      </header>
+      <p></p>
+      <div class="project-container">
+        <!-- insert stuff here -->
+        <div class = "project-text">
+          <p class = "project-title"> Team Maker </p> 
+          <p> An algorithm to create League of Legends teams. </p>
+        </div>
+        <div class = "project-text">
+          <p class = "project-header"> A Short Description </p> 
+          <div class="row">
+            <div class="column"> 
+              <div class="column-left">
+                <p>Context</p>
+                <p>Creating a script to make my position as ESports Community Director easier </p>
+              </div>
+              <div class="column-mid">
+                <p>Time</p>
+                <p>Two weeks</p>
+              </div>
+              <div class="column-right">
+                <p>Tech Stacks Used</p>
+                <p>Python, Google Sheets API </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class = "project-text">
+          <p class = "project-header"> An In-Depth Look </p> 
+          <div class="tab">
+            <p> As the League of Legends Community Director at Umich Esports, I wanted to connect and bring together 
+            the large amount of students that played League of Legends at UMich. During Fall of 2020, I proposed the 
+            idea of Round Robins where students can sign up and play games with other UMich students. All skill levels 
+            are allowed; I wanted students to be able learn and teach the game, as well as make new friends. </p>
+            <p> The Round Robins took place about every two weeks. For each Round Robin, we would have to make new teams
+            depending on signups. The process of creating balanced teams where the skill level was approximately even on 
+            both teams was tedious when done by hand. </p>
+            <p> To really see how tedious it would be, here is what team making depended on:</p>
+            <ul>
+              <li>Rank of players (their skill level). </li>
+              <ul>
+                <li>There are 9 tiers and 4 divisions each, meaning 36 different ranks!</li>
+              </ul>
+              <li>Primary role (the position the player most wants to play). 
+              <ul>
+                <li>There are 5 roles in League, and most people only like to play 2 roles.  </li>
+              </ul>
+              <li>Secondary role (the backup position)</li>
+              <ul>
+                <li>If the player cannot get their primary role, then we can try to give them their secondary role</li>
+              </ul>
+              <li>Fill players</li>
+              <ul>
+                <li>Fill players don't have any role preference, which is good! But it feels like a whole other role when making teams by hand</li>
+              </ul>
+            </ul>
+            <p> So, there is a lot that goes into balancing teams than meets the eye.</p>
+          </div>
+          <p class = "project-header"> The Planning </p> 
+          <div class="tab">
+            <p>I spent a couple days thinking about how the algorithm would work, and also consulted my friend who is the 
+            League of Legends coach for Northeastern University. From there, I started to come up with a flow-chart 
+            for an algorithm I thought would work. With some Youtube videos about Google Sheets API, and a lot of time later,
+            I coded a script that would take Google Sheets responses, make teams, and print them out on Google Sheets. Hooray!</p>
+          </div>
+          <p class = "project-header"> How It Works </p> 
+          <div class="tab">
+            <p>Here is how the algorithm works, in list form, and simplified:</p>
+            <ol type="1">
+              <li>I use Google Sheets API to take in a bunch of information about the players</li>
+              <li>I go through the list of players randomly, looking at their primary role. If possible, I add them to a team.</li>
+              <li>If the team is not full after going through the players, I look at the remaining players' secondary role and add if possible</li>
+              <li>If the team is still not full, I add in fill players to fill the teams.</li>
+              <li>If team is not full at this point, restart the algorithm</li>
+              <li>If team is full, add to best team variable to keep track of best team so far</li>
+              <li>If teams are made but there is a large skill difference between the two teams, restart.</li>
+              <li>Repeat for making the other teams. If at any point, the teams cannot be filled, restart. I have counters in place so it won't go infinitely.</li>
+              <li>After it runs 10 times, it will take the best teams made and print them out on the Google Sheet.</li>
+            </ol>
+            <button class="bubbly-button" onclick="window.open('https://github.com/yurichen17/TeamMaker','_blank')">Click Here for Code<height=100px></button>
+          </div>
+        </div>
+      </div>
+      
+   </body>
+   
+</html>

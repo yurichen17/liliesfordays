@@ -76,6 +76,7 @@ div.a{
     display:flex;
     align-items:flex-start;
     justify-content:center;
+    
 }
 
 .portfolioHeader{
@@ -85,27 +86,63 @@ div.a{
     top: 200px;
 }
 
+.portTitles{
+    position:absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 0%; /* Adjust this value to move the positioned div up and down */
+    text-align: center;
+    width: 60%; /* Set the width of the positioned div */
+}
+
 .portImages{
-    margin-left: 10px;
+    margin-left:10px;
     margin-right:10px;
+    position: relative;
+    display: inline-block; /* Make the width of box same as image */
 }
 
 #teamMaker{
-    background-image:url("assets/bitemoji.png");
+    background-image:url("assets/league.png");
     background-size: cover;
-    height:100px;
-    width:100px;
+    height:190px;
+    width:190px;
+}
+
+#mines{
+    background-image:url("assets/bomb.png");
+    background-size: cover;
+    height:190px;
+    width:190px;
+}
+
+#graphic{
+    background-image:url("assets/graphic.png");
+    background-size: cover;
+    height:190px;
+    width:190px;
+}
+
+#illustration{
+    background-image:url("assets/illustration.png");
+    background-size: cover;
+    height:190px;
+    width:190px;
 }
 
 .bottom{
-    margin-top: 50px;
+    min-height:100%;
+    position:relative;
+    margin-top: 3vh;
     height:50px;
     background-color: rgba(175, 164, 240, 0.808);
 }
 
 .sneaky{
     position:relative;
-    top: 540px;
+    top: 520px;
     right:200px;
     height:8vh;
 }
@@ -148,6 +185,77 @@ div.a{
     width: 300px;
     height: auto;
 }
+
+.project-container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width:100vw;
+    padding-top: 110px;
+}
+
+.project-title{
+    color:white;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.project-text{
+    color:white;
+    margin-top: 75px;
+    max-width: 70%;
+    line-height: 23px;
+}
+
+.project-header{
+    color:white;
+    font-size: 25px;
+    margin-left: 2.5em;
+}
+
+.column{
+    display:flex;
+    width:100vw;
+    max-width: 100%;
+}
+
+.column-left{
+    text-align: center;
+    padding-right: 50px;
+    padding-left:50px;
+    float:left;
+    width:50%;
+    
+    background:rgba(175, 164, 240, 0.24);
+}
+
+.column-mid{
+    text-align: center;
+    display:inline-block;
+    width:15%;
+    background:rgba(175, 164, 240, 0.453);
+}
+
+.column-right{
+    text-align: center;
+    padding-right: 50px;
+    padding-left:50px;
+    float:right;
+    width:35%;
+    background:rgba(175, 164, 240, 0.658);
+}
+
+
+.row:after{
+    content:"";
+    display:table;
+    clear:both;
+}
+
+.tab{
+    margin-left:5em;
+}
+
 .contact-pic{
     
     margin: 10px;
@@ -170,6 +278,23 @@ div.a{
     .about-text {
         margin-top: 50px;
         max-width: 80%;
+    }
+    .column{
+        width:100%;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0px;
+        padding-right:0px;
+    }
+    .column-left{
+        width:100%;
+    }
+    .column-right{
+        width:100%;
+    }
+    .column-mid{
+        width:100%;
     }
 }
 
