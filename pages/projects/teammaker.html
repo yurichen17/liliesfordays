@@ -86,7 +86,9 @@
           <p class = "project-header"> The Planning </p> 
           <div class="tab">
             <p>I spent a couple days thinking about how the algorithm would work, and also consulted my friend who is the 
-            League of Legends coach for Northeastern University. From there, I started to come up with a flow-chart 
+            League of Legends coach for Northeastern University. Here are some notes I took, and also the beginning of balancing rank:</p>
+            <img src="../../assets/teamnotes.png" height="500px">
+            <p> From there, I started to come up with a flow-chart 
             for an algorithm I thought would work. With some Youtube videos about Google Sheets API, and a lot of time later,
             I coded a script that would take Google Sheets responses, make teams, and print them out on Google Sheets. Hooray!</p>
           </div>
@@ -104,7 +106,12 @@
               <li>Repeat for making the other teams. If at any point, the teams cannot be filled, restart. I have counters in place so it won't go infinitely.</li>
               <li>After it runs 10 times, it will take the best teams made and print them out on the Google Sheet.</li>
             </ol>
-            <button class="bubbly-button" onclick="window.open('https://github.com/yurichen17/TeamMaker','_blank')">Click Here for Code<height=100px></button>
+            <p>Below is a google sheet that I used to test if the code worked. "Players" has all the players that entered the Round Robin. "Teams" has 6 teams and therefore 3 matches that can be played at the same time, and each team has their score on the left. 
+            The algorithm is set so the team scores cannot differ by more than 10. </p>
+            <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR6SITgpNqyxWZxfg2MOnQ1qoj8C0NbB0p0ZpQ6AoCRfH8SuR51Y2Y1yjaHgKSqBpupmM-IHB_VqW4q/pubhtml?widget=true&amp;headers=false" height=400px width=1000px></iframe>
+            <p>
+              <button class="bubbly-button" onclick="window.open('https://github.com/yurichen17/TeamMaker','_blank')">Click Here for Code<height=100px></button>
+            </p>
           </div>
         </div>
       </div>
