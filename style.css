@@ -176,6 +176,9 @@ div.a{
     align-items:center;
     margin-left: 10px;
 }
+.center{
+    text-align: center;
+}
 
 .about-pic{
     border-radius: 50%;
