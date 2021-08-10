@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<link rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=Kodchasan">
+<html>
+   <head>
+     <meta charset="UTF-8">
+     <meta name="description" content="This is a cool website">
+     <title>Yuri's Website</title>
+     <link rel="icon" href="../../assets/Y.png">
+     <link rel="stylesheet" href="../../style.css">
+   </head>
+   <body class="about">
+      <header>
+        <a href = "../../index.html"><img width="80" src = "../../assets/lily.png" alt="logo" class="logo"></a>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <nav>
+          <ul>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../portfolio.html">Portfolio</a></li>
+            <li><a href="../../assets/Resume.pdf"target="_blank">Resume</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <!-- looking for id -->
+        <label for="nav-toggle" class="nav-toggle-label">
+          <span></span>
+        </label>
+      </header>
+      <p></p>
+      <div class="project-container">
+        <!-- insert stuff here -->
+        <div class = "project-text">
+          <p class = "project-title"> Drawing Vision </p> 
+          <p> A small computer vision project. </p>
+        </div>
+        <div class = "project-text">
+          <p class = "project-header"> A Short Description </p> 
+          <div class="row">
+            <div class="column"> 
+              <div class="column-left">
+                <p>Context</p>
+                <p>Making a drawing app that runs the drawing through computer vision to guess what you drew </p>
+              </div>
+              <div class="column-mid">
+                <p>Time</p>
+                <p>2 days</p>
+              </div>
+              <div class="column-right">
+                <p>Tech Stacks Used</p>
+                <p>HTML, CSS, JS </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class = "project-text">
+          <p class = "project-header"> An In-Depth Look </p> 
+          <div class="tab">
+            <p> After taking 442 - Computer Vision, I wanted to make a small project that would incorperate what I learned in the class.
+            The class was both challenging and rewarding, and taught me some valuable lessons as well. I had not learned python directly; 
+            95% of my python knowledge is from this very computer vision class! In the beginning, I was afraid of falling behind my peers
+            since I did not know python. With some tutorials and visiting office hours, I was able to get through the first homework. As the
+            semester continued on, it became easier to use python. 442 taught me to not give up!</p>
+            
+          </div>
+          <p class = "project-header"> The Planning </p> 
+          <div class="tab">
+            <p> I really wanted this project to have some work done in Google Colab, but couldn't figure out how to tie Google Colab to an
+            html website. After watching some videos, I figured I would have the most luck if I could make the drawing application in html, and then
+            somehow send the finished drawing through a trained computer vision model that would spit out a prediction of the image. I ended up using 
+            the "canvas" object in html to make the drawing board, and then sent the drawing to a tensorflow model that would return predictions.</p>
+          </div>
+          <p class = "project-header"> How It Works </p> 
+          <div class="tab">
+            <p>I had some trouble trying to save a canvas state (with the drawing inside) as an image. With tons of stack overflow, the canvas state was still
+            saved as a strange state of strings. I had a great idea to set it equal to an image object first and it worked! </p>
+
+            
+            <p>Some problems I now see with this is that the prediction probabilities are quite low. I think it's because the model was trained on actual
+            pictures instead of drawings. If I were to do this project again, I would try and find an image set of drawings, and train on those instead of using
+            mobile.net for their model.</p>
+            <p></p>
+            <p>
+              <button class="bubbly-button" onclick="window.open('https://github.com/yurichen17/Drawing-Vision','_blank')">Click Here for Code<height=100px></button>
+              <button class="bubbly-button" id="secondButton" onclick="window.open('https://yurichen17.github.io/Drawing-Vision/','_blank')">Try it out!<height=100px></button>
+            </p>
+          </div>
+        </div>
+      </div>
+      <script type="text/javascript" src="../../scripts/button.js"></script>
+   </body>
+   
+</html>

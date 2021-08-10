@@ -118,6 +118,17 @@ div.a{
     width:190px;
 }
 
+#drawvis{
+  background-image:url("assets/drawvis.png");
+  background-size: cover;
+  height:190px;
+  width:190px;
+}
+
+#secondButton{
+  margin-left: 10px;
+}
+
 #graphic{
     background-image:url("assets/graphic.png");
     background-size: cover;
