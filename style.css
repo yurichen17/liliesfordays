@@ -89,7 +89,6 @@ div.a{
     display:flex;
     align-items:flex-start;
     justify-content:center;
-    
 }
 
 .portfolioHeader{
@@ -179,6 +178,15 @@ div.a{
     margin-right: 50px;
     max-width: 80%;
     line-height: 23px;
+}
+.spacedtext{
+  color:white;
+  margin-top: 50px;
+  padding-left:100px;
+  padding-right:100px;
+  margin-right: 50px;
+  max-width: 80%;
+  line-height: 23px;
 }
 
 .about-title{
