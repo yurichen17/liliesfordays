@@ -18,11 +18,13 @@ body.home{
     
     font-family:'Kodchasan';
     font-weight:400;
+    /*
     background-image: url("assets/me.png");
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    */
     height: 100%;
     /*overflow: hidden;*/
     position:relative;
@@ -46,10 +48,21 @@ body.about{
     margin: 0;
 }
 
+#mountain{
+  display: block;
+  position:fixed;
+  filter: sepia(.2);
+  right:0;
+  bottom:0;
+  min-width: 100%;
+  min-height:100%;
+}
+
 h1{
     text-align: center;
     font-size: 60px;
     font-weight: bolder;
+    text-shadow: 2px 2px #333;
 }
 
 div.a{
@@ -148,7 +161,7 @@ div.a{
     position:relative;
     margin-top: 3vh;
     height:50px;
-    background-color: rgba(175, 164, 240, 0.808);
+    background-color: rgb(54, 54, 54);
 }
 
 .sneaky{
@@ -317,7 +330,7 @@ div.a{
     color:white;
 }
 
-.zoom {
+.title {
     transition: transform .2s; /* Animation */
 
     text-align: center;
@@ -329,9 +342,6 @@ div.a{
     margin-left:-250px;
 }
 
-.zoom:hover {
-    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-}
 
 
 /*
@@ -375,7 +385,7 @@ header{
 .rectangle{
     width:200px;
     height:7px;
-    background:rgb(54, 54, 54);
+    background:rgb(255, 255, 255);
     position:fixed;
     top: 50%;
     left: 50%;
@@ -385,7 +395,7 @@ header{
 .rectangle1{
     width:200px;
     height:7px;
-    background:rgb(54, 54, 54);
+    background:rgb(255, 255, 255);
     position:fixed;
     top: 50%;
     left: 50%;
@@ -396,7 +406,7 @@ header{
 .smallrect{
     width:100px;
     height:7px;
-    background:rgb(54, 54, 54);
+    background:rgb(255, 255, 255);
     position:fixed;
     top: 50%;
     left: 50%;
@@ -407,7 +417,7 @@ header{
 .smallrect1{
     width:100px;
     height:7px;
-    background:rgb(54, 54, 54);
+    background:rgb(255, 255, 255);
     position:fixed;
     top: 50%;
     left: 50%;
