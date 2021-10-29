@@ -1,7 +1,7 @@
 function first(){
   var x= document.getElementById("firstbtn");
   x.value='my val';
-  x.innerHTML=" My name is Yuri Chen and I'm a Computer Science major and Art and Design minor at the University of Michigan. I'll be graduating in April 2023. I'm currently working on a script that will help me balance teams as the League of Legends community director at UMich.";
+  x.innerHTML="My name is Yuri Chen and I'm majoring in Computer Science and minoring in Art and Design at the University of Michigan. I'll be graduating in April 2023. I'm currently taking web development classes this semester. I have ideas of how to turn my Team Balancer project into more of a full-stack project, and will be starting that soon!";
   var y=document.getElementById("secondbtn");
   y.style.display='block';
   var z=document.getElementById("aboutpic");
@@ -11,7 +11,7 @@ function first(){
 function second(){
   var x= document.getElementById("secondbtn");
   x.value='my val';
-  x.innerHTML="Besides classes, I am also part of a volunteer program called Center for Sucess in Detroit that helps increase literacy in children. I love to help people and hope that my work will be about making things easier and more accessible for the rest of the population.";
+  x.innerHTML="Besides classes, I am also a mentor for Renew CS. This group focuses on supporting undergraduate women in computer science by providing mentoring sessions weekly, and longer skill sessions on Sundays. I love to help people and hope that my work will be about making things easier and more accessible for the rest of the population.";
   var y=document.getElementById("thirdbtn");
   y.style.display='block';
   var z=document.getElementById("aboutpic");
