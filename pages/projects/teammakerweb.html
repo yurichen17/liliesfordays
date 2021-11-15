@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<link rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=Kodchasan">
+<html>
+   <head>
+     <meta charset="UTF-8">
+     <meta name="description" content="This is a cool website">
+     <title>Yuri's Website</title>
+     <link rel="icon" href="../../assets/Y.png">
+     <link rel="stylesheet" href="../../style.css">
+   </head>
+   <body class="about">
+      <header>
+        <a href = "../../index.html"><img width="80" src = "../../assets/lily.png" alt="logo" class="logo"></a>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <nav>
+          <ul>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../portfolio.html">Portfolio</a></li>
+            <li><a href="../../assets/Resume.pdf"target="_blank">Resume</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <!-- looking for id -->
+        <label for="nav-toggle" class="nav-toggle-label">
+          <span></span>
+        </label>
+      </header>
+      <p></p>
+      <div class="project-container">
+        <!-- insert stuff here -->
+        <div class = "project-text">
+          <p class = "project-title"> Team Maker - Website </p> 
+          <p> A website to create balanced League of Legends teams. </p>
+        </div>
+        <div class = "project-text">
+          <p class = "project-header"> A Short Description </p> 
+          <div class="row">
+            <div class="column"> 
+              <div class="column-left">
+                <p>Context</p>
+                <p> Creating a website so the League of Legends community staff can quickly and easily balance teams for events</p>
+              </div>
+              <div class="column-mid">
+                <p>Time</p>
+                <p>1 week</p>
+              </div>
+              <div class="column-right">
+                <p>Tech Stacks Used</p>
+                <p>Vue, Javascript, HTML/CSS, Google Sheets API </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class = "project-text">
+          <p class = "project-header"> An In-Depth Look </p> 
+          <div class="tab">
+            <p>After being promoted to Head of Events of Michigan Esports, my position as League of Legends community director was 
+            passeed down to other students who now work under me on the event commitee. I wanted to turn my team balancing script 
+            into a website that my League of Legends community directors can use to create balanced League of Legends teams.</p>
+            <p>I recently organized a gaming event that over 125 people came to. Over 30 people game for League of Legends. For the 
+            next event I'll be holding, I'll be telling my staff to use this website to save a lot of time.</p>
+          </div>
+          <p class = "project-header"> The Planning </p> 
+          <div class="tab">
+            <p>I already wrote the algorithm in python. Since I'm currently taking 493 User Interface Development and learned about
+            Vue.js in lecture, I decided it would be good practice to use Vue and Javascript for this project.</p>
+            <p> Here's my process.</p>
+              <ol>
+                <li>I first drew a draft interface on Concepts.</li>
+                <img src = "../../assets/concept.png" height="500px">
+                <li>I started doing a bunch of research of what I could do in terms of accessing the Google Sheets for information.</li>
+                  <ul>
+                    <li>My previous script used a service account to access a certain spreadsheet. If I used a service account again, I would 
+                    have to somehow need to have the user share their sheet with the service account.</li>
+                    <li>I could have the website share the form that the user should use to collect data. There would be two buttons on the website;
+                    one to run the script on the information on the sheet, one to clear the forms/the spreadsheet.</li>
+                  </ul>
+                <li>The first option seemed like a hassle to continue sharing the sheet with a suspicious service account name. The second option
+                seemed like it could work, but Google Sheets doesn't have an option to clear forms.</li>
+                <li>Luckily, creating an API key to view public spreadsheets seemed to be the best solution. So, that's what I went with.</li>
+                <li>I tested the API calling by typing in a sheet_id using Vue and Axios to fetch.</li>
+                <li>I recoded my Python script into Javascript</li>
+                <li>I use Vue to dynamically change the page and display the matches.</li>
+              </ol>
+            <p> Having the script in Python origianlly made the algorithm part of this project much easier to code. I was able to 
+            reuse more code this time around by creating more generic functions.</p>
+          </div>
+          <p class = "project-header"> How It Works </p> 
+          <div class="tab">
+            <p>Check out my Team Maker Script page to see how the algorithm works. Below is how a user would experience this website:</p>
+            <ol type="1">
+              <li>A community director makes a copy of the linked form on the website and send it out to all the players that want to play.</li>
+              <li>Once all the users have filled it out, the community director publishes the sheet to the web.</li>
+              <li>The community director takes the sheet_id and inputs it into the website text input.</li>
+              <li>They press "Generate" to generate teams</li>
+              <li>The teams are all outputted onto the website dynamically.</li>
+            </ol>
+            <p>
+              <button class="bubbly-button" onclick="window.open('https://yurichen17.github.io/Team-Maker-Website/','_blank')">Click Here to try it!<height=100px></button>
+            </p>
+          </div>
+        </div>
+      </div>
+      <script type="text/javascript" src="../../scripts/button.js"></script>
+   </body>
+   
+</html>
