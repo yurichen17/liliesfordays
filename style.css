@@ -114,6 +114,13 @@ div.a{
     display: inline-block; /* Make the width of box same as image */
 }
 
+#snipits{
+  background-image:url("assets/scissors.png");
+    background-size: cover;
+    height:190px;
+    width:190px;
+}
+
 #teamMaker{
     background-image:url("assets/league.png");
     background-size: cover;

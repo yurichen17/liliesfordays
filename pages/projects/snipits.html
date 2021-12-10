@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<link rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=Kodchasan">
+<html>
+   <head>
+     <meta charset="UTF-8">
+     <meta name="description" content="This is a cool website">
+     <title>Yuri's Website</title>
+     <link rel="icon" href="../../assets/Y.png">
+     <link rel="stylesheet" href="../../style.css">
+   </head>
+   <body class="about">
+      <header>
+        <a href = "../../index.html"><img width="80" src = "../../assets/lily.png" alt="logo" class="logo"></a>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <nav>
+          <ul>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../portfolio.html">Portfolio</a></li>
+            <li><a href="../../assets/Resume.pdf"target="_blank">Resume</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <!-- looking for id -->
+        <label for="nav-toggle" class="nav-toggle-label">
+          <span></span>
+        </label>
+      </header>
+      <p></p>
+      <div class="project-container">
+        <!-- insert stuff here -->
+        <div class = "project-text">
+          <p class = "project-title"> Snipits - Website </p> 
+          <p> A cute website to store small snipits of information. </p>
+        </div>
+        <div class = "project-text">
+          <p class = "project-header"> A Short Description </p> 
+          <div class="row">
+            <div class="column"> 
+              <div class="column-left">
+                <p>Context</p>
+                <p> Create a website to get more experience with REST API and make a small social media site.</p>
+              </div>
+              <div class="column-mid">
+                <p>Time</p>
+                <p>1 week</p>
+              </div>
+              <div class="column-right">
+                <p>Tech Stacks Used</p>
+                <p>React, Javascript, Cloudflare, HTML/CSS, Adobe Photoshop</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class = "project-text">
+          <p class = "project-header"> An In-Depth Look </p> 
+          <div class="tab">
+            <p>This project is actually part of Cloudflare's take home assignment. I had so much fun coding this that I wanted to show it off here on
+              my website! It had the perfect amount of coding and design and I just love how it turned out.
+            </p>
+            <p>The general concepts of this project is using Cloudflare workers to handle HTTP GET and POST requests. You also use Cloudflare KV to add a 
+              database portion to the application. Then, you create a front end with React and put it all together!</p>
+          </div>
+          <p class = "project-header"> The Planning </p> 
+          <div class="tab">
+            <p>The project was very open ended. For some reason, I wanted to call my project "Snips" since you would be posting small text bits on 
+              the social media application. I started to roll with this idea as I was coding the backend of this project. I had never used Cloudflare
+              before this so I did a lot of googling to learn syntax and how to use the Cloudflare workers.
+            </p>
+            <p> Here's my process.</p>
+              <ol>
+                <li>I read through the prompt and researched Cloudflare, Cloudflare workers, and Cloudflare KV to build the backend.</li>
+                <li>I spread out the work between these few segments and aimed to complete one section in a day or two:</li>
+                  <ul>
+                    <li>Creating a worker to accept GET requests</li>
+                    <li>Creating a worker to accept POST requests</li>
+                    <li>Creating the front end in React</li>
+                  </ul>
+                <li>Testing the GET requests was simple since when the webpage loaded, that would be a GET request so I could see if the information
+                  in the GET request was properly accessing the Cloudflare KV.
+                </li>
+                <li>Getting the POST requests to work took a bit longer. I had issues that arose from not fulling understanding Cloudflare workers at the time.
+                  To test POST requests, I figured out how to send curl requests as a POST request to try and alter the KV database.
+                </li>
+                <li>The front end was the most fun for me. From the idea of calling my web app "Snipits," I decided for a scissors theme
+                  and drew a sample wire frame.
+                </li>
+                <img src="../../assets/snipits.jpg" height="500px">
+                <li>I used the Cloudflare workers I made to send GET and POST requests on my React app to display and upload posts. 
+                </li>
+                <li>I then added styling and animated scissors on Adobe Photoshop. I wanted the scissors to "cut" the messages out as you submit a post. I was so happy when it worked!</li>
+              </ol>
+            <p> Having the script in Python origianlly made the algorithm part of this project much easier to code. I was able to 
+            reuse more code this time around by creating more generic functions.</p>
+          </div>
+          <p class = "project-header"> How It Works </p> 
+          <div class="tab">
+            <p>Below is how a user would experience this website:</p>
+            <ol type="1">
+              <li>You can create posts by filling out a name, title, and content for the post and then pressing submit.</li>
+              <li>The post get saved into the database by sending a POST request.</li>
+              <li>The web app does another GET request to grab the updated info.</li>
+              <li>The scissors snip!</li>
+              <li>The new post shows below and is saved for all to see.</li>
+            </ol>
+            <p>
+              <button class="bubbly-button" onclick="window.open('https://snipit.pages.dev/','_blank')">Click Here to try it!<height=100px></button>
+            </p>
+          </div>
+        </div>
+      </div>
+      <script type="text/javascript" src="../../scripts/button.js"></script>
+   </body>
+   
+</html>
