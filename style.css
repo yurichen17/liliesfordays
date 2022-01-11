@@ -96,6 +96,14 @@ div.a{
     top: 200px;
 }
 
+.middle-button{
+  color:white;
+    text-align: center;
+    position: relative;
+    top: 200px;
+    font-weight: bold;
+}
+
 .portTitles{
     position:absolute;
     z-index: 999;
